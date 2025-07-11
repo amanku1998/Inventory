@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc702f2ba8f77fc4c8611a6bbb4d9866, type: 3}
-  m_Name: NewItem
+  m_Name: ThornleafHerb
   m_EditorClassIdentifier: 
-  Name: 0
+  Name: 8
   Type: 0
   rarity: 0
-  itemSprite: {fileID: 0}
-  itemDescription: 
+  itemSprite: {fileID: -2095811855, guid: 0f631fb4ef610be4da327e7e8773d616, type: 3}
+  itemDescription: A key ingredient in healing salves
   buyingPrice: 0
   sellingPrice: 0
   weight: 0

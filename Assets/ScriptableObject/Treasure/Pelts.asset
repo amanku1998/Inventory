@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc702f2ba8f77fc4c8611a6bbb4d9866, type: 3}
+  m_Name: Pelts
+  m_EditorClassIdentifier: 
+  Name: 19
+  Type: 3
+  rarity: 0
+  itemSprite: {fileID: -1273417591, guid: 2ea98b1ea9818c14eb0ef5a812344a44, type: 3}
+  itemDescription: Fine animal pelts, warm and luxurious, sought after by artisans
+    and royalty
+  buyingPrice: 0
+  sellingPrice: 0
+  weight: 0
+  quantity: 0
