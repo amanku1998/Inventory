@@ -152,8 +152,8 @@ TextureImporter:
       name: StrengthTonic
       rect:
         serializedVersion: 2
-        x: 70
-        y: 650
+        x: 69
+        y: 651
         width: 180
         height: 200
       alignment: 0
