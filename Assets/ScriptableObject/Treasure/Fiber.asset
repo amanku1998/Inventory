@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 18
   Type: 3
-  rarity: 0
+  rarity: 1
   itemSprite: {fileID: -2001442757, guid: 2ea98b1ea9818c14eb0ef5a812344a44, type: 3}
   itemDescription: Bundles of spun flax and cotton, the backbone of clothing, sails,
     and trade goods
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 10
+  sellingPrice: 5
+  weight: 1
+  quantity: 60

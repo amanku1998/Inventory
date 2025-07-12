@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 3
   Type: 0
-  rarity: 0
+  rarity: 2
   itemSprite: {fileID: -1095534895, guid: 0f631fb4ef610be4da327e7e8773d616, type: 3}
   itemDescription: Glows in the dark; used in alchemy
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 70
+  sellingPrice: 35
+  weight: 1
+  quantity: 15

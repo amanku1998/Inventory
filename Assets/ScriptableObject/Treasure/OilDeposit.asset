@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 14
   Type: 3
-  rarity: 0
+  rarity: 1
   itemSprite: {fileID: -2037563474, guid: 2ea98b1ea9818c14eb0ef5a812344a44, type: 3}
   itemDescription: A bubbling pool of black gold, vital for machines, wealth, and
     industrial might
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 25
+  sellingPrice: 12
+  weight: 4
+  quantity: 30

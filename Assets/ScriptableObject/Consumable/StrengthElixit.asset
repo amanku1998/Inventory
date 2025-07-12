@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 41
   Type: 2
-  rarity: 0
+  rarity: 2
   itemSprite: {fileID: 1232075155, guid: a1f4990dd2780bc4c96b001486475e8c, type: 3}
   itemDescription: Greaily boost attack
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 60
+  sellingPrice: 30
+  weight: 4
+  quantity: 20

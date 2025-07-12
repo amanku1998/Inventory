@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 44
   Type: 2
-  rarity: 0
+  rarity: 3
   itemSprite: {fileID: 36005263, guid: a1f4990dd2780bc4c96b001486475e8c, type: 3}
   itemDescription: Increases spell accuracy
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 150
+  sellingPrice: 75
+  weight: 10
+  quantity: 10

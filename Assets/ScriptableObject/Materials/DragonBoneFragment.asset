@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 4
   Type: 0
-  rarity: 0
+  rarity: 4
   itemSprite: {fileID: 1262318884, guid: 0f631fb4ef610be4da327e7e8773d616, type: 3}
   itemDescription: High-tier crafting component
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 200
+  sellingPrice: 100
+  weight: 4
+  quantity: 5

@@ -18,7 +18,7 @@ MonoBehaviour:
   itemSprite: {fileID: -1723187893, guid: 2ea98b1ea9818c14eb0ef5a812344a44, type: 3}
   itemDescription: Solid slabs of stone, perfect for monuments, roads, and fortress
     walls
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 5
+  sellingPrice: 2
+  weight: 5
+  quantity: 75

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc702f2ba8f77fc4c8611a6bbb4d9866, type: 3}
+  m_Name: MoonleafTea
+  m_EditorClassIdentifier: 
+  Name: 46
+  Type: 2
+  rarity: 2
+  itemSprite: {fileID: 2012957345, guid: 1fa6cf8a9c7f26e428d9edfbae349379, type: 3}
+  itemDescription: A soothing blend of rare lunar herbs. Restores a small amount
+    of health and calms negative effects.
+  buyingPrice: 65
+  sellingPrice: 32
+  weight: 1
+  quantity: 20

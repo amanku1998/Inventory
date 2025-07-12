@@ -5,12 +5,14 @@ public class GenericMonoSingleton<T> : MonoBehaviour where T : GenericMonoSingle
     public static T Instance { get { return instance;} }
     private static T instance;
 
-    private void Awake()
+    public void Awake()
     {
         if (instance == null)
         {
+            Debug.Log($"Awake called for {typeof(T).Name}");
             instance = (T)this;
             DontDestroyOnLoad(this.gameObject);
+            OnAwake();
         }
         else
         {
@@ -18,4 +20,5 @@ public class GenericMonoSingleton<T> : MonoBehaviour where T : GenericMonoSingle
         }
     }
 
+    protected virtual void OnAwake() { }
 }

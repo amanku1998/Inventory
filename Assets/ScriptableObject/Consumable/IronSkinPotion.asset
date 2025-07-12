@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 42
   Type: 2
-  rarity: 0
+  rarity: 3
   itemSprite: {fileID: 1616555470, guid: a1f4990dd2780bc4c96b001486475e8c, type: 3}
   itemDescription: Curesses defense
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 100
+  sellingPrice: 50
+  weight: 4
+  quantity: 12

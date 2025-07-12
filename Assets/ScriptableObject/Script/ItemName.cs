@@ -45,6 +45,8 @@ public enum ItemName
     StrengthElixit,
     IronSkinPotion,
     AntidoteOil,
-    MagicScroll
-    //Add more three icons for consumable(pending)
+    MagicScroll,
+    ThunderDraught,
+    MoonleafTea,
+    CrystalFlask
 }

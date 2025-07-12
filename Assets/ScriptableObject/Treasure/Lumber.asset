@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 20
   Type: 3
-  rarity: 0
+  rarity: 1
   itemSprite: {fileID: 393606171, guid: 2ea98b1ea9818c14eb0ef5a812344a44, type: 3}
   itemDescription: Sturdy timber logs, felled from ancient forests, essential for
     building and crafting
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 30
+  sellingPrice: 15
+  weight: 5
+  quantity: 40

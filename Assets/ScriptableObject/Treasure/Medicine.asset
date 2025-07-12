@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 17
   Type: 3
-  rarity: 0
+  rarity: 3
   itemSprite: {fileID: -145351754, guid: 2ea98b1ea9818c14eb0ef5a812344a44, type: 3}
   itemDescription: A pouch of rare herbs and potions, known to heal the sick and
     strengthen the weak
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 90
+  sellingPrice: 45
+  weight: 1
+  quantity: 10

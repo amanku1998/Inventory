@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 38
   Type: 2
-  rarity: 0
+  rarity: 3
   itemSprite: {fileID: 2043647213, guid: a1f4990dd2780bc4c96b001486475e8c, type: 3}
   itemDescription: Temporarily boosts speed
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 90
+  sellingPrice: 45
+  weight: 6
+  quantity: 15

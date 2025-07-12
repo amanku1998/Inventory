@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc702f2ba8f77fc4c8611a6bbb4d9866, type: 3}
+  m_Name: CrystalFlask
+  m_EditorClassIdentifier: 
+  Name: 47
+  Type: 2
+  rarity: 3
+  itemSprite: {fileID: -1001497819, guid: 1fa6cf8a9c7f26e428d9edfbae349379, type: 3}
+  itemDescription: A sparkling vial filled with mystic energy. Instantly restores
+    a portion of both stamina and mana.
+  buyingPrice: 130
+  sellingPrice: 65
+  weight: 5
+  quantity: 12

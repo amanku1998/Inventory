@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 23
   Type: 3
-  rarity: 0
+  rarity: 2
   itemSprite: {fileID: 1512821515, guid: 2ea98b1ea9818c14eb0ef5a812344a44, type: 3}
   itemDescription: Tough and weathered hides, turned into armor, gear, and merchant
     goods
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 60
+  sellingPrice: 30
+  weight: 2
+  quantity: 25

@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 1
   Type: 0
-  rarity: 0
+  rarity: 1
   itemSprite: {fileID: -2014995162, guid: 0f631fb4ef610be4da327e7e8773d616, type: 3}
   itemDescription: Basic metal used in forging weapons
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 20
+  sellingPrice: 10
+  weight: 5
+  quantity: 50

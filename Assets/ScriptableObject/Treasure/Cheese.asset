@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 16
   Type: 3
-  rarity: 0
+  rarity: 2
   itemSprite: {fileID: 1702100309, guid: 2ea98b1ea9818c14eb0ef5a812344a44, type: 3}
   itemDescription: A wheel of aged, aromatic cheese, delicacy of nobles and staple
     of feasts
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 40
+  sellingPrice: 20
+  weight: 2
+  quantity: 20

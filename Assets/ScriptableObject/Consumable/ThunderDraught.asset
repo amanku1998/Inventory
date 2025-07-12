@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc702f2ba8f77fc4c8611a6bbb4d9866, type: 3}
+  m_Name: ThunderDraught
+  m_EditorClassIdentifier: 
+  Name: 45
+  Type: 2
+  rarity: 4
+  itemSprite: {fileID: -1857088374, guid: e9277862cad38cc46b76666a996953a9, type: 3}
+  itemDescription: A crackling potion infused with the power of storms. Grants a
+    temporary boost to agility and reaction speed.
+  buyingPrice: 250
+  sellingPrice: 125
+  weight: 15
+  quantity: 8

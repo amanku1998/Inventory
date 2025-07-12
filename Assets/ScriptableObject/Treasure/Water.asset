@@ -18,7 +18,7 @@ MonoBehaviour:
   itemSprite: {fileID: -882899831, guid: 2ea98b1ea9818c14eb0ef5a812344a44, type: 3}
   itemDescription: ' A crystal-clear flask of pure spring water, prized in parched
     lands and desert empires'
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 3
+  sellingPrice: 1
+  weight: 2
+  quantity: 75

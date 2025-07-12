@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 24
   Type: 1
-  rarity: 0
+  rarity: 1
   itemSprite: {fileID: 2015405480, guid: af8661b3bc2090742845dd71f74e02aa, type: 3}
   itemDescription: Balanced blade for beginners
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 100
+  sellingPrice: 50
+  weight: 6
+  quantity: 5

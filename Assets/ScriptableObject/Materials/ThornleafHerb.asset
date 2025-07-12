@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 8
   Type: 0
-  rarity: 0
+  rarity: 1
   itemSprite: {fileID: -2095811855, guid: 0f631fb4ef610be4da327e7e8773d616, type: 3}
   itemDescription: A key ingredient in healing salves
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 30
+  sellingPrice: 15
+  weight: 1
+  quantity: 40

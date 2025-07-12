@@ -18,7 +18,7 @@ MonoBehaviour:
   itemSprite: {fileID: 467633774, guid: 2ea98b1ea9818c14eb0ef5a812344a44, type: 3}
   itemDescription: ' A sack of golden wheat, essential for sustaining your people
     and powering trade'
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 5
+  sellingPrice: 2
+  weight: 1
+  quantity: 75

@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 0
   Type: 0
-  rarity: 0
+  rarity: 3
   itemSprite: {fileID: -612887949, guid: 0f631fb4ef610be4da327e7e8773d616, type: 3}
   itemDescription: ' A rare gem that glows in sunlight'
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 120
+  sellingPrice: 60
+  weight: 3
+  quantity: 10

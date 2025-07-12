@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 11
   Type: 0
-  rarity: 0
+  rarity: 2
   itemSprite: {fileID: -1894789141, guid: 0f631fb4ef610be4da327e7e8773d616, type: 3}
   itemDescription: Extremely rare wood with dark properties
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 80
+  sellingPrice: 40
+  weight: 3
+  quantity: 15

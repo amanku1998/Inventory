@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 7
   Type: 0
-  rarity: 0
+  rarity: 3
   itemSprite: {fileID: 1194204877, guid: 0f631fb4ef610be4da327e7e8773d616, type: 3}
   itemDescription: Tough and flexible, ideal for bindings
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 140
+  sellingPrice: 70
+  weight: 2
+  quantity: 10

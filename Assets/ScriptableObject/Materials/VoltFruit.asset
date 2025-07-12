@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 2
   Type: 0
-  rarity: 0
+  rarity: 2
   itemSprite: {fileID: 1816746290, guid: 0f631fb4ef610be4da327e7e8773d616, type: 3}
   itemDescription: Sweet cactus fruit that resists electricity
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 60
+  sellingPrice: 30
+  weight: 2
+  quantity: 20

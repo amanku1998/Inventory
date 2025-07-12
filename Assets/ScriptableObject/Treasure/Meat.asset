@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 15
   Type: 3
-  rarity: 0
+  rarity: 1
   itemSprite: {fileID: -2014471427, guid: 2ea98b1ea9818c14eb0ef5a812344a44, type: 3}
   itemDescription: Freshly cured game meat, a hearty source of strength for travelers
     and warriors alike
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 20
+  sellingPrice: 10
+  weight: 3
+  quantity: 50

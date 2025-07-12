@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 40
   Type: 2
-  rarity: 0
+  rarity: 2
   itemSprite: {fileID: 1124523504, guid: a1f4990dd2780bc4c96b001486475e8c, type: 3}
   itemDescription: Restores health and stamina
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 50
+  sellingPrice: 25
+  weight: 3
+  quantity: 20

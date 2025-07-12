@@ -1,0 +1,51 @@
+using UnityEngine;
+
+public class InventoryController
+{
+    [SerializeField] private ItemDataList itemDataList;
+
+    //private Items item;
+    private InventoryView inventoryView;
+
+    public void OnEnable()
+    {
+       GameService.Instance.GetEventService().OnAddRandomItems.AddListener(AddItemInInventory);
+    }
+
+    public void OnDisable()
+    {
+        GameService.Instance.GetEventService().OnAddRandomItems.RemoveListener(AddItemInInventory);
+    }
+
+    public InventoryController(InventoryView inventoryView, ItemDataList itemDataList)
+    {
+        this.inventoryView = Object.Instantiate(inventoryView);
+        this.inventoryView.transform.SetParent(GameService.Instance.GetParentTransformOfUICanvas(), false);
+        this.inventoryView.transform.SetAsFirstSibling();
+        this.inventoryView.SetInventoryController(this);
+        this.itemDataList = itemDataList;
+    }
+
+    private void AddItemInInventory(Items inventoryItem, int quantity)
+    {
+        for (int i = 0; i < inventoryView.GetSlotLists().Count; i++)
+        {
+            ItemSlot slot = inventoryView.GetSlotLists()[i];
+
+            if (slot.GetInventoryItem() == null)
+            {
+                slot.AddedNewItemInSlot(inventoryItem, quantity);
+                break;
+            }
+            else
+            if (slot.GetInventoryItem().Name == inventoryItem.Name)
+            {
+                slot.AddedSameItemInSlot(quantity);
+                break;
+            }
+        }
+
+        int totalWeightGain = inventoryItem.weight * quantity;
+        GameService.Instance.UpdateWeight(totalWeightGain);
+    }
+}

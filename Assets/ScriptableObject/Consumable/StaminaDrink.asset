@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 37
   Type: 2
-  rarity: 0
+  rarity: 2
   itemSprite: {fileID: -634650981, guid: a1f4990dd2780bc4c96b001486475e8c, type: 3}
   itemDescription: Refills stamina bar instantly
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 55
+  sellingPrice: 25
+  weight: 3
+  quantity: 20

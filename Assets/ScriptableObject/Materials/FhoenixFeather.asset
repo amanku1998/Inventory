@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 5
   Type: 0
-  rarity: 0
+  rarity: 4
   itemSprite: {fileID: -1095534895, guid: 0f631fb4ef610be4da327e7e8773d616, type: 3}
   itemDescription: Rare material for enchanted gear
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 220
+  sellingPrice: 110
+  weight: 1
+  quantity: 3

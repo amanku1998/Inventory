@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 9
   Type: 0
-  rarity: 0
+  rarity: 3
   itemSprite: {fileID: -833433342, guid: 0f631fb4ef610be4da327e7e8773d616, type: 3}
   itemDescription: Searing hot; used to enhance fire weapons
-  buyingPrice: 0
-  sellingPrice: 0
-  weight: 0
-  quantity: 0
+  buyingPrice: 150
+  sellingPrice: 75
+  weight: 6
+  quantity: 5
