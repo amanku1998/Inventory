@@ -366,6 +366,7 @@ MonoBehaviour:
   addRandomItems: {fileID: 32792507}
   uiCanvasTransform: {fileID: 563092431}
   itemDataList: {fileID: 11400000, guid: ea2abb9e87d1f1840b317b014f14b085, type: 2}
+  shopView: {fileID: 5093585952720512087, guid: c39d7d4b9a1cfc84985181bcf09a4469, type: 3}
   inventoryView: {fileID: 6107205452111447471, guid: 14341430a6e2f164f850006f35dec8d9, type: 3}
 --- !u!4 &473605922
 Transform:

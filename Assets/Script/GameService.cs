@@ -16,19 +16,19 @@ public class GameService : GenericMonoSingleton<GameService>
     [SerializeField] private Transform uiCanvasTransform;
 
     [SerializeField] private ItemDataList itemDataList;
+
+    [SerializeField] private ShopView shopView;
     [SerializeField] private InventoryView inventoryView;
+
+    private ShopService shopService;
     private InventoryService inventoryService;
 
     private EventService eventService;
-    protected override void OnAwake()
-    {
-        Debug.Log("GameService Awake called");
-        // Your init logic here
-    }
-    // Start is called before the first frame update
+
     void Start()
     {
         eventService = new EventService();
+        shopService = new ShopService(shopView, itemDataList);
         inventoryService = new InventoryService(inventoryView, itemDataList);
     }
 

@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -71,4 +70,11 @@ public enum SlotType
     Consumables,
     Treasure,
     Inventory
+}
+
+[System.Serializable]
+public class SlotList
+{
+    public SlotType slotType;
+    public List<ItemSlot> slotList;
 }

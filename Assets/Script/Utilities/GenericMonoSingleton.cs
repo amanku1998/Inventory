@@ -12,7 +12,7 @@ public class GenericMonoSingleton<T> : MonoBehaviour where T : GenericMonoSingle
             Debug.Log($"Awake called for {typeof(T).Name}");
             instance = (T)this;
             DontDestroyOnLoad(this.gameObject);
-            OnAwake();
+            //OnAwake();
         }
         else
         {
@@ -20,5 +20,5 @@ public class GenericMonoSingleton<T> : MonoBehaviour where T : GenericMonoSingle
         }
     }
 
-    protected virtual void OnAwake() { }
+    //protected virtual void OnAwake() { }
 }
