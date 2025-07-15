@@ -46,6 +46,15 @@ public class ItemSlot : MonoBehaviour
         UpdateSlot();
     }
 
+    public void DecreaseItemQuantity(int quantity)
+    {
+        if (items != null)
+        {
+            itemQuantity -= quantity;
+        }
+        UpdateSlot();
+    }
+
     void ResetSlot()
     {
         itemQuantity = 0;
@@ -56,9 +65,33 @@ public class ItemSlot : MonoBehaviour
         items = null;
     }
 
+    public void DisableSelectionBox()
+    {
+        selectioxBox.enabled = false;
+    }
+    public void EnableSelectionBox()
+    {
+        selectioxBox.enabled = true;
+    }
+
+    public void OnSelectSlot()
+    {
+        GameService.Instance.GetEventService().OnSlotSelect.InvokeEvent(this);
+    }
+
     public Items GetInventoryItem()
     {
         return items;
+    }
+
+    public int GetItemQuantity()
+    {
+        return itemQuantity;
+    }
+
+    public SlotType GetSlotType()
+    {
+        return slotType;
     }
 }
 

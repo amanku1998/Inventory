@@ -8,4 +8,10 @@ public class InventoryService : MonoBehaviour
     {
         inventoryController = new InventoryController(inventoryView, itemDataList);
     }
+
+    public InventoryController GetInventoryController()
+    {
+        return inventoryController;
+    }
+
 }

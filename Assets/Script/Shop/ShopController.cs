@@ -19,6 +19,18 @@ public class ShopController
         UpdateShop();
     }
 
+    public void OnEnable()
+    {
+        GameService.Instance.GetEventService().OnBuyItem.AddListener(SetBuyItemInfo);
+        //GameService.Instance.GetEventService().OnConfirmSellItem.AddListener(AddItemInShop);
+    }
+
+    public void OnDisable()
+    {
+        GameService.Instance.GetEventService().OnBuyItem.RemoveListener(SetBuyItemInfo);
+        //GameService.Instance.GetEventService().OnConfirmSellItem.RemoveListener(AddItemInShop);
+    }
+
     private void UpdateShop()
     {
         for (int i = 0; i < 4; i++)
@@ -39,4 +51,46 @@ public class ShopController
         return SlotList;
     }
 
+    private void ResetSlot()
+    {
+        itemSlot = null;
+        quantity = 0;
+        item = null;
+    }
+
+    private void SetBuyItemInfo(ItemSlot Slot, int Quantity)
+    {
+        itemSlot = Slot;
+        quantity = Quantity;
+        item = Slot.GetInventoryItem();
+    }
+
+    public void BuyConfirm()
+    {
+        if (itemSlot && itemSlot.GetSlotType() != SlotType.Inventory)
+        {
+            int totalCost = item.buyingPrice * quantity;
+            int totalWeight = item.weight * quantity;
+
+            if (totalCost > GameService.Instance.GetCoin())
+            {
+                GameService.Instance.GetEventService().OnBuyFailed.InvokeEvent(BuyFailedType.Coin);
+                ResetSlot();
+                return;
+            }
+
+            if (totalWeight > GameService.Instance.GetRemainingWeight())
+            {
+                GameService.Instance.GetEventService().OnBuyFailed.InvokeEvent(BuyFailedType.InventoryWeight);
+                ResetSlot();
+                return;
+            }
+
+            GameService.Instance.SpentCoin(totalCost);
+            itemSlot.DecreaseItemQuantity(quantity);
+
+            GameService.Instance.GetEventService().OnConfirmBuyItem.InvokeEvent(item, quantity);
+            ResetSlot();
+        }
+    }
 }
