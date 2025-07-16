@@ -50,6 +50,8 @@ public class ItemInfoHandler : MonoBehaviour
             totalPrice.SetText(price.ToString());
             selectedSlot.EnableSelectionBox();
         }
+
+        GameService.Instance.GetAudioService().Play(SoundType.SelectSlot);
     }
 
     public void DecreaseItemQuantity()
@@ -57,6 +59,7 @@ public class ItemInfoHandler : MonoBehaviour
         if (selectedInventoryItem && currentQuantity > 1 && selectedSlot.GetItemQuantity() > 0)
         {
             int price = (selectedSlot.GetSlotType() != SlotType.Inventory) ? selectedInventoryItem.buyingPrice : selectedInventoryItem.sellingPrice;
+            GameService.Instance.GetAudioService().PlayClickSound();
             currentQuantity--;
             setQuantity.SetText(currentQuantity.ToString());
             totalPrice.SetText((price * currentQuantity).ToString());
@@ -68,6 +71,7 @@ public class ItemInfoHandler : MonoBehaviour
         if (selectedInventoryItem && currentQuantity < selectedSlot.GetItemQuantity() && selectedSlot.GetItemQuantity() > 0)
         {
             int price = (selectedSlot.GetSlotType() != SlotType.Inventory) ? selectedInventoryItem.buyingPrice : selectedInventoryItem.sellingPrice;
+            GameService.Instance.GetAudioService().PlayClickSound();
             currentQuantity++;
             setQuantity.SetText(currentQuantity.ToString());
             totalPrice.SetText((price * currentQuantity).ToString());
@@ -77,10 +81,12 @@ public class ItemInfoHandler : MonoBehaviour
     public void OnBuyItem()
     {
         GameService.Instance.GetEventService().OnBuyItem.InvokeEvent(selectedSlot, currentQuantity);
+        GameService.Instance.GetAudioService().PlayClickSound();
     }
 
     public void OnSellItem()
     {
         GameService.Instance.GetEventService().OnSellItem.InvokeEvent(selectedSlot, currentQuantity);
+        GameService.Instance.GetAudioService().PlayClickSound();
     }
 }

@@ -86,6 +86,7 @@ public class ShopController
                 return;
             }
 
+            GameService.Instance.GetAudioService().Play(SoundType.BuySuccess);
             GameService.Instance.SpentCoin(totalCost);
             itemSlot.DecreaseItemQuantity(quantity);
 

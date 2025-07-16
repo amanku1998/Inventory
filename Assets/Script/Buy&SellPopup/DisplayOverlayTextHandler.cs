@@ -38,6 +38,7 @@ public class DisplayOverlayTextHandler : MonoBehaviour
     private void UpdateTextOnBuyFailed(BuyFailedType buyFailedType)
     {
         string failedText = (buyFailedType == BuyFailedType.Coin) ? buyFailedByCoin : buyfailedByInventoryWeight;
+        GameService.Instance.GetAudioService().Play(SoundType.BuyFailed);
         OverlayText.enabled = true;
         OverlayText.text = failedText;
         OverlayText.color = Color.red;

@@ -73,6 +73,7 @@ public class InventoryController
             slot.DecreaseItemQuantity(quantity);
 
             GameService.Instance.AddCoin(totalCost);
+            GameService.Instance.GetAudioService().Play(SoundType.SellSuccess);
             GameService.Instance.GetEventService().OnConfirmSellItem.InvokeEvent(item, quantity);
             GameService.Instance.UpdateWeight(-totalWeightDec);
             slot = null;

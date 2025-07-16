@@ -10,6 +10,10 @@ public class GameService : GenericMonoSingleton<GameService>
     [SerializeField] private TextMeshProUGUI currentItemWeightText;
     [SerializeField] private int maxWeight = 500;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioScriptableObject audioScriptableObject;
+    private AudioService audioService;
+
     private int coin;
     private int currentWeight;
 
@@ -32,6 +36,7 @@ public class GameService : GenericMonoSingleton<GameService>
     void Start()
     {
         eventService = new EventService();
+        audioService = new AudioService(audioSource, audioScriptableObject);
         shopService = new ShopService(shopView, itemDataList);
         inventoryService = new InventoryService(inventoryView, itemDataList);
         infoPanelHandler.SubscribeEvent();
@@ -84,6 +89,8 @@ public class GameService : GenericMonoSingleton<GameService>
             return;
         }
 
+        audioService.Play(SoundType.AddRandomItem);
+
         eventService.OnAddRandomItems.InvokeEvent(item, 1);
     }
 
@@ -108,6 +115,10 @@ public class GameService : GenericMonoSingleton<GameService>
         return eventService;
     }
 
+    public AudioService GetAudioService()
+    {
+        return audioService;
+    }
     public void ConfirmBuyItemFromShop()
     {
         shopService.GetShopController().BuyConfirm();
